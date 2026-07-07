@@ -4,7 +4,7 @@ Frontier-research project ideas, plus the survey that motivated them. Bias towar
 
 ## Contents
 
-- **[api-only-frontier-re-projects.md](./api-only-frontier-re-projects.md)** — 8 project ideas buildable with **no GPU** (just model APIs), each aimed at an arXiv note / blog + open-sourced code. Grouped by: reward modeling & verifiers, test-time compute, evals & measurement, data-centric. Plus an appendix with the broader (GPU-dependent) set.
+- **[api-only-frontier-re-projects.md](./api-only-frontier-re-projects.md)** — 13 project ideas buildable with **no GPU** (just model APIs), each with a full spec: research question, method, exact models/datasets, baselines, the one plottable artifact to ship, stretch goals, and the "what makes it boring" trap. Grouped by: reward modeling & verifiers, test-time compute, evals & measurement, data-centric, and **VLM/VLA** (vision-language(-action), API-only). Includes a practical-setup section (models, the Anthropic-logprobs gotcha, cost discipline, stats hygiene) and an appendix with the broader GPU-dependent set.
 
 - **[frontier-2026-beyond-world-models.md](./frontier-2026-beyond-world-models.md)** — a mid-2026 survey of the AI/ML frontier *beyond* world models and harnesses: RL-for-agents, data-free self-improvement, test-time compute (and where it's hype), post-Transformer architectures, native multimodal, embodied/VLAs, AI-for-science, mech-interp correcting itself, and continual learning / test-time training. Compiled from a deep-research harness run (78 search/fetch/verify agents → 136 claims → 42 adversarial verdicts; 4 refuted claims corrected inline).
 
@@ -14,5 +14,7 @@ Frontier-research project ideas, plus the survey that motivated them. Bias towar
 
 ## Suggested starting pair
 
-1. **Verifier-guided scaling where verification is hard** — cleanest expression of the thesis; genuinely open result.
-2. **LLM-judge stress-test + robust aggregation** — reuses existing cross-family adversarial infra; shippable in ~2 weeks.
+1. **The Verifier Wall** (verifier-guided scaling where verification is hard) — cleanest expression of the thesis; genuinely open result.
+2. **How to Break an LLM Judge** — reuses existing cross-family adversarial infra (Council); shippable in ~2 weeks.
+
+...and the exciting new lane: **"Can Frontier VLMs Actually Reason About Space?"** — an embodied-reasoning benchmark that's the VLM core of every VLA, with a spicy negative result.
